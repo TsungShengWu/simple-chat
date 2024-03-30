@@ -1,0 +1,9 @@
+{
+  "$schema": "https://json.schemastore.org/swcrc",
+  "jsc": {
+    "experimental": {
+      "plugins": [["effector-swc-plugin", {}]]
+    }
+  }
+}
+// You must specify a configuration for a plugin, even if it's empty

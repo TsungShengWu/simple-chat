@@ -28,6 +28,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@effector/next@npm:^0.7.0":
+  version: 0.7.0
+  resolution: "@effector/next@npm:0.7.0"
+  peerDependencies:
+    effector: ^22.8.6 || ^23.0.0
+    effector-react: ^22.5.4 || ^23.0.0
+    react: ^18.2.0
+  checksum: 10c0/c11b72949e133fe8fee577e4096486cdfba96d0d77cf7e86e55b1b5a6677df8e85b37a00f3c7fac9975f6c522ce711f69205dda55a95267fa7a07be63917d300
+  languageName: node
+  linkType: hard
+
 "@eslint-community/eslint-utils@npm:^4.2.0":
   version: 4.4.0
   resolution: "@eslint-community/eslint-utils@npm:4.4.0"
@@ -1091,6 +1102,34 @@ __metadata:
   languageName: node
   linkType: hard
 
+"effector-react@npm:^23.2.0":
+  version: 23.2.0
+  resolution: "effector-react@npm:23.2.0"
+  dependencies:
+    use-sync-external-store: "npm:^1.0.0"
+  peerDependencies:
+    effector: ^23.0.0
+    react: ">=16.8.0 <19.0.0"
+  checksum: 10c0/fcb1956f2d340b6cf6e4ceb3bc5fb5dcdc4c612c2aa8b20f49beacd93568555f5699f5e872ee1aac4fbfc50bc3ede8be218668f8c82e6df88ca90a3fc315dc5e
+  languageName: node
+  linkType: hard
+
+"effector-swc-plugin@npm:0.3.0":
+  version: 0.3.0
+  resolution: "effector-swc-plugin@npm:0.3.0"
+  peerDependencies:
+    "@swc/core": ">=1.4.0"
+  checksum: 10c0/e39dff40f50b51bde9801ddbf11c08674814eae37dc5d6482de94cc4003504948c0c5a6e35bf64ff57128913f468f48f7d03f4697c9941f1d8617e2b3bb47cf6
+  languageName: node
+  linkType: hard
+
+"effector@npm:^23.2.0":
+  version: 23.2.0
+  resolution: "effector@npm:23.2.0"
+  checksum: 10c0/60109902109b23f0b2b79236753846aafa31fa59c53b35573bac67fca81ce926c8eb51f5ac6a0dd4ea846744d29725df2f3cedf1e2f0764076a6eb6f8d6ac51a
+  languageName: node
+  linkType: hard
+
 "electron-to-chromium@npm:^1.4.668":
   version: 1.4.710
   resolution: "electron-to-chromium@npm:1.4.710"
@@ -1363,6 +1402,18 @@ __metadata:
     eslint:
       optional: true
   checksum: 10c0/1aeeb97bf4b688d28de136ee57c824480c37691b40fa825c711a4caf85954e94b99c06ac639d7f1f6c1d69223bd21bcb991155b3e589488e958d5b83dfd0f882
+  languageName: node
+  linkType: hard
+
+"eslint-plugin-effector@npm:^0.14.0":
+  version: 0.14.0
+  resolution: "eslint-plugin-effector@npm:0.14.0"
+  dependencies:
+    prettier: "npm:^2.3.2"
+  peerDependencies:
+    effector: ^23
+    eslint: 7 || 8
+  checksum: 10c0/06dfd4dee54558b58269bb4ce2b5f752ed8cad6dea531c9c7a648d6322e007da1a26c96c122edd96d02cdf3ee79aa478097fa0f14a256f70fbe0afdaa5fb73cc
   languageName: node
   linkType: hard
 
@@ -3171,6 +3222,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"prettier@npm:^2.3.2":
+  version: 2.8.8
+  resolution: "prettier@npm:2.8.8"
+  bin:
+    prettier: bin-prettier.js
+  checksum: 10c0/463ea8f9a0946cd5b828d8cf27bd8b567345cf02f56562d5ecde198b91f47a76b7ac9eae0facd247ace70e927143af6135e8cf411986b8cb8478784a4d6d724a
+  languageName: node
+  linkType: hard
+
 "proc-log@npm:^3.0.0":
   version: 3.0.0
   resolution: "proc-log@npm:3.0.0"
@@ -3517,13 +3577,18 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "simple-chat@workspace:."
   dependencies:
+    "@effector/next": "npm:^0.7.0"
     "@types/node": "npm:^20"
     "@types/react": "npm:^18"
     "@types/react-dom": "npm:^18"
     autoprefixer: "npm:^10.0.1"
+    effector: "npm:^23.2.0"
+    effector-react: "npm:^23.2.0"
+    effector-swc-plugin: "npm:0.3.0"
     eslint: "npm:^8"
     eslint-config-next: "npm:14.1.3"
     eslint-config-prettier: "npm:^9.1.0"
+    eslint-plugin-effector: "npm:^0.14.0"
     next: "npm:14.1.3"
     postcss: "npm:^8"
     prettier: "npm:3.2.5"
@@ -4022,6 +4087,15 @@ __metadata:
   dependencies:
     punycode: "npm:^2.1.0"
   checksum: 10c0/4ef57b45aa820d7ac6496e9208559986c665e49447cb072744c13b66925a362d96dd5a46c4530a6b8e203e5db5fe849369444440cb22ecfc26c679359e5dfa3c
+  languageName: node
+  linkType: hard
+
+"use-sync-external-store@npm:^1.0.0":
+  version: 1.2.0
+  resolution: "use-sync-external-store@npm:1.2.0"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0
+  checksum: 10c0/ac4814e5592524f242921157e791b022efe36e451fe0d4fd4d204322d5433a4fc300d63b0ade5185f8e0735ded044c70bcf6d2352db0f74d097a238cebd2da02
   languageName: node
   linkType: hard
 

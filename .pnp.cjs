@@ -26,13 +26,18 @@ const RAW_RUNTIME_STATE =
       [null, {\
         "packageLocation": "./",\
         "packageDependencies": [\
+          ["@effector/next", "virtual:a70e6ec9876b77bec36fd24e069c075fdf8d9b01e51a3e62ccc3969080e32f8cf7718a5d23cfb35452b80c0350e2f296899458484614fba3cd30b2cbdc2f30a9#npm:0.7.0"],\
           ["@types/node", "npm:20.11.29"],\
           ["@types/react", "npm:18.2.67"],\
           ["@types/react-dom", "npm:18.2.22"],\
           ["autoprefixer", "virtual:a70e6ec9876b77bec36fd24e069c075fdf8d9b01e51a3e62ccc3969080e32f8cf7718a5d23cfb35452b80c0350e2f296899458484614fba3cd30b2cbdc2f30a9#npm:10.4.18"],\
+          ["effector", "npm:23.2.0"],\
+          ["effector-react", "virtual:a70e6ec9876b77bec36fd24e069c075fdf8d9b01e51a3e62ccc3969080e32f8cf7718a5d23cfb35452b80c0350e2f296899458484614fba3cd30b2cbdc2f30a9#npm:23.2.0"],\
+          ["effector-swc-plugin", "virtual:a70e6ec9876b77bec36fd24e069c075fdf8d9b01e51a3e62ccc3969080e32f8cf7718a5d23cfb35452b80c0350e2f296899458484614fba3cd30b2cbdc2f30a9#npm:0.3.0"],\
           ["eslint", "npm:8.57.0"],\
           ["eslint-config-next", "virtual:a70e6ec9876b77bec36fd24e069c075fdf8d9b01e51a3e62ccc3969080e32f8cf7718a5d23cfb35452b80c0350e2f296899458484614fba3cd30b2cbdc2f30a9#npm:14.1.3"],\
           ["eslint-config-prettier", "virtual:a70e6ec9876b77bec36fd24e069c075fdf8d9b01e51a3e62ccc3969080e32f8cf7718a5d23cfb35452b80c0350e2f296899458484614fba3cd30b2cbdc2f30a9#npm:9.1.0"],\
+          ["eslint-plugin-effector", "virtual:a70e6ec9876b77bec36fd24e069c075fdf8d9b01e51a3e62ccc3969080e32f8cf7718a5d23cfb35452b80c0350e2f296899458484614fba3cd30b2cbdc2f30a9#npm:0.14.0"],\
           ["next", "virtual:a70e6ec9876b77bec36fd24e069c075fdf8d9b01e51a3e62ccc3969080e32f8cf7718a5d23cfb35452b80c0350e2f296899458484614fba3cd30b2cbdc2f30a9#npm:14.1.3"],\
           ["postcss", "npm:8.4.36"],\
           ["prettier", "npm:3.2.5"],\
@@ -68,6 +73,36 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@babel/runtime", "npm:7.24.0"],\
           ["regenerator-runtime", "npm:0.14.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@effector/next", [\
+      ["npm:0.7.0", {\
+        "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/@effector-next-npm-0.7.0-b08e68d3cf-10c0.zip/node_modules/@effector/next/",\
+        "packageDependencies": [\
+          ["@effector/next", "npm:0.7.0"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:a70e6ec9876b77bec36fd24e069c075fdf8d9b01e51a3e62ccc3969080e32f8cf7718a5d23cfb35452b80c0350e2f296899458484614fba3cd30b2cbdc2f30a9#npm:0.7.0", {\
+        "packageLocation": "./.yarn/__virtual__/@effector-next-virtual-4b4efcdc21/4/AppData/Local/Yarn/Berry/cache/@effector-next-npm-0.7.0-b08e68d3cf-10c0.zip/node_modules/@effector/next/",\
+        "packageDependencies": [\
+          ["@effector/next", "virtual:a70e6ec9876b77bec36fd24e069c075fdf8d9b01e51a3e62ccc3969080e32f8cf7718a5d23cfb35452b80c0350e2f296899458484614fba3cd30b2cbdc2f30a9#npm:0.7.0"],\
+          ["@types/effector", null],\
+          ["@types/effector-react", null],\
+          ["@types/react", "npm:18.2.67"],\
+          ["effector", "npm:23.2.0"],\
+          ["effector-react", "virtual:a70e6ec9876b77bec36fd24e069c075fdf8d9b01e51a3e62ccc3969080e32f8cf7718a5d23cfb35452b80c0350e2f296899458484614fba3cd30b2cbdc2f30a9#npm:23.2.0"],\
+          ["react", "npm:18.2.0"]\
+        ],\
+        "packagePeers": [\
+          "@types/effector-react",\
+          "@types/effector",\
+          "@types/react",\
+          "effector-react",\
+          "effector",\
+          "react"\
         ],\
         "linkType": "HARD"\
       }]\
@@ -1371,6 +1406,64 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["effector", [\
+      ["npm:23.2.0", {\
+        "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/effector-npm-23.2.0-cb327be251-10c0.zip/node_modules/effector/",\
+        "packageDependencies": [\
+          ["effector", "npm:23.2.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["effector-react", [\
+      ["npm:23.2.0", {\
+        "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/effector-react-npm-23.2.0-35c5b69dc8-10c0.zip/node_modules/effector-react/",\
+        "packageDependencies": [\
+          ["effector-react", "npm:23.2.0"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:a70e6ec9876b77bec36fd24e069c075fdf8d9b01e51a3e62ccc3969080e32f8cf7718a5d23cfb35452b80c0350e2f296899458484614fba3cd30b2cbdc2f30a9#npm:23.2.0", {\
+        "packageLocation": "./.yarn/__virtual__/effector-react-virtual-0f809941ef/4/AppData/Local/Yarn/Berry/cache/effector-react-npm-23.2.0-35c5b69dc8-10c0.zip/node_modules/effector-react/",\
+        "packageDependencies": [\
+          ["effector-react", "virtual:a70e6ec9876b77bec36fd24e069c075fdf8d9b01e51a3e62ccc3969080e32f8cf7718a5d23cfb35452b80c0350e2f296899458484614fba3cd30b2cbdc2f30a9#npm:23.2.0"],\
+          ["@types/effector", null],\
+          ["@types/react", "npm:18.2.67"],\
+          ["effector", "npm:23.2.0"],\
+          ["react", "npm:18.2.0"],\
+          ["use-sync-external-store", "virtual:0f809941efe86137cc04ec214521a59017d160a77fcd63c69e83fdee421a50cd372bbfb1563f34f0bdbc99cb0f412459962c6a2176a7a438c831369bb12c2d3d#npm:1.2.0"]\
+        ],\
+        "packagePeers": [\
+          "@types/effector",\
+          "@types/react",\
+          "effector",\
+          "react"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["effector-swc-plugin", [\
+      ["npm:0.3.0", {\
+        "packageLocation": "./.yarn/unplugged/effector-swc-plugin-virtual-74966ba747/node_modules/effector-swc-plugin/",\
+        "packageDependencies": [\
+          ["effector-swc-plugin", "npm:0.3.0"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:a70e6ec9876b77bec36fd24e069c075fdf8d9b01e51a3e62ccc3969080e32f8cf7718a5d23cfb35452b80c0350e2f296899458484614fba3cd30b2cbdc2f30a9#npm:0.3.0", {\
+        "packageLocation": "./.yarn/unplugged/effector-swc-plugin-virtual-74966ba747/node_modules/effector-swc-plugin/",\
+        "packageDependencies": [\
+          ["effector-swc-plugin", "virtual:a70e6ec9876b77bec36fd24e069c075fdf8d9b01e51a3e62ccc3969080e32f8cf7718a5d23cfb35452b80c0350e2f296899458484614fba3cd30b2cbdc2f30a9#npm:0.3.0"],\
+          ["@swc/core", null],\
+          ["@types/swc__core", null]\
+        ],\
+        "packagePeers": [\
+          "@swc/core",\
+          "@types/swc__core"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["electron-to-chromium", [\
       ["npm:1.4.710", {\
         "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/electron-to-chromium-npm-1.4.710-c6a1d3ee1d-10c0.zip/node_modules/electron-to-chromium/",\
@@ -1807,6 +1900,33 @@ const RAW_RUNTIME_STATE =
           "eslint-import-resolver-node",\
           "eslint-import-resolver-typescript",\
           "eslint-import-resolver-webpack",\
+          "eslint"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["eslint-plugin-effector", [\
+      ["npm:0.14.0", {\
+        "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/eslint-plugin-effector-npm-0.14.0-3754e4bb75-10c0.zip/node_modules/eslint-plugin-effector/",\
+        "packageDependencies": [\
+          ["eslint-plugin-effector", "npm:0.14.0"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:a70e6ec9876b77bec36fd24e069c075fdf8d9b01e51a3e62ccc3969080e32f8cf7718a5d23cfb35452b80c0350e2f296899458484614fba3cd30b2cbdc2f30a9#npm:0.14.0", {\
+        "packageLocation": "./.yarn/__virtual__/eslint-plugin-effector-virtual-013aace448/4/AppData/Local/Yarn/Berry/cache/eslint-plugin-effector-npm-0.14.0-3754e4bb75-10c0.zip/node_modules/eslint-plugin-effector/",\
+        "packageDependencies": [\
+          ["eslint-plugin-effector", "virtual:a70e6ec9876b77bec36fd24e069c075fdf8d9b01e51a3e62ccc3969080e32f8cf7718a5d23cfb35452b80c0350e2f296899458484614fba3cd30b2cbdc2f30a9#npm:0.14.0"],\
+          ["@types/effector", null],\
+          ["@types/eslint", null],\
+          ["effector", "npm:23.2.0"],\
+          ["eslint", "npm:8.57.0"],\
+          ["prettier", "npm:2.8.8"]\
+        ],\
+        "packagePeers": [\
+          "@types/effector",\
+          "@types/eslint",\
+          "effector",\
           "eslint"\
         ],\
         "linkType": "HARD"\
@@ -3850,6 +3970,13 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["prettier", [\
+      ["npm:2.8.8", {\
+        "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/prettier-npm-2.8.8-430828a36c-10c0.zip/node_modules/prettier/",\
+        "packageDependencies": [\
+          ["prettier", "npm:2.8.8"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
       ["npm:3.2.5", {\
         "packageLocation": "./.yarn/unplugged/prettier-npm-3.2.5-6859110d6a/node_modules/prettier/",\
         "packageDependencies": [\
@@ -4222,13 +4349,18 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./",\
         "packageDependencies": [\
           ["simple-chat", "workspace:."],\
+          ["@effector/next", "virtual:a70e6ec9876b77bec36fd24e069c075fdf8d9b01e51a3e62ccc3969080e32f8cf7718a5d23cfb35452b80c0350e2f296899458484614fba3cd30b2cbdc2f30a9#npm:0.7.0"],\
           ["@types/node", "npm:20.11.29"],\
           ["@types/react", "npm:18.2.67"],\
           ["@types/react-dom", "npm:18.2.22"],\
           ["autoprefixer", "virtual:a70e6ec9876b77bec36fd24e069c075fdf8d9b01e51a3e62ccc3969080e32f8cf7718a5d23cfb35452b80c0350e2f296899458484614fba3cd30b2cbdc2f30a9#npm:10.4.18"],\
+          ["effector", "npm:23.2.0"],\
+          ["effector-react", "virtual:a70e6ec9876b77bec36fd24e069c075fdf8d9b01e51a3e62ccc3969080e32f8cf7718a5d23cfb35452b80c0350e2f296899458484614fba3cd30b2cbdc2f30a9#npm:23.2.0"],\
+          ["effector-swc-plugin", "virtual:a70e6ec9876b77bec36fd24e069c075fdf8d9b01e51a3e62ccc3969080e32f8cf7718a5d23cfb35452b80c0350e2f296899458484614fba3cd30b2cbdc2f30a9#npm:0.3.0"],\
           ["eslint", "npm:8.57.0"],\
           ["eslint-config-next", "virtual:a70e6ec9876b77bec36fd24e069c075fdf8d9b01e51a3e62ccc3969080e32f8cf7718a5d23cfb35452b80c0350e2f296899458484614fba3cd30b2cbdc2f30a9#npm:14.1.3"],\
           ["eslint-config-prettier", "virtual:a70e6ec9876b77bec36fd24e069c075fdf8d9b01e51a3e62ccc3969080e32f8cf7718a5d23cfb35452b80c0350e2f296899458484614fba3cd30b2cbdc2f30a9#npm:9.1.0"],\
+          ["eslint-plugin-effector", "virtual:a70e6ec9876b77bec36fd24e069c075fdf8d9b01e51a3e62ccc3969080e32f8cf7718a5d23cfb35452b80c0350e2f296899458484614fba3cd30b2cbdc2f30a9#npm:0.14.0"],\
           ["next", "virtual:a70e6ec9876b77bec36fd24e069c075fdf8d9b01e51a3e62ccc3969080e32f8cf7718a5d23cfb35452b80c0350e2f296899458484614fba3cd30b2cbdc2f30a9#npm:14.1.3"],\
           ["postcss", "npm:8.4.36"],\
           ["prettier", "npm:3.2.5"],\
@@ -4800,6 +4932,28 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["uri-js", "npm:4.4.1"],\
           ["punycode", "npm:2.3.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["use-sync-external-store", [\
+      ["npm:1.2.0", {\
+        "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/use-sync-external-store-npm-1.2.0-44f75d2564-10c0.zip/node_modules/use-sync-external-store/",\
+        "packageDependencies": [\
+          ["use-sync-external-store", "npm:1.2.0"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:0f809941efe86137cc04ec214521a59017d160a77fcd63c69e83fdee421a50cd372bbfb1563f34f0bdbc99cb0f412459962c6a2176a7a438c831369bb12c2d3d#npm:1.2.0", {\
+        "packageLocation": "./.yarn/__virtual__/use-sync-external-store-virtual-a962cbb13c/4/AppData/Local/Yarn/Berry/cache/use-sync-external-store-npm-1.2.0-44f75d2564-10c0.zip/node_modules/use-sync-external-store/",\
+        "packageDependencies": [\
+          ["use-sync-external-store", "virtual:0f809941efe86137cc04ec214521a59017d160a77fcd63c69e83fdee421a50cd372bbfb1563f34f0bdbc99cb0f412459962c6a2176a7a438c831369bb12c2d3d#npm:1.2.0"],\
+          ["@types/react", "npm:18.2.67"],\
+          ["react", "npm:18.2.0"]\
+        ],\
+        "packagePeers": [\
+          "@types/react",\
+          "react"\
         ],\
         "linkType": "HARD"\
       }]\

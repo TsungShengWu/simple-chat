@@ -1,3 +1,10 @@
 {
-  "extends": ["next/core-web-vitals", "prettier"]
+  "plugins": ["effector"],
+  "extends": [
+    "next/core-web-vitals",
+    "prettier",
+    "plugin:effector/react",
+    "plugin:effector/recommended",
+    "plugin:effector/scope"
+  ]
 }
