@@ -1,10 +1,10 @@
 import { createStore, createEffect } from 'effector';
-import { UserStore, LoginPayload, LoginResult } from './types';
+import { UserStore, LoginPayload, LoginResult, User } from './types';
 import api from '../api';
 
 const initStore: UserStore = {};
 
-export const $store = createStore<UserStore>(initStore);
+export const $user = createStore<UserStore>(initStore);
 
 export const loginFx = createEffect(
   (data: LoginPayload) => api.post<LoginResult>(
@@ -25,12 +25,25 @@ export const logoutFx = createEffect(
   }),
 );
 
+export const getProfileFx = createEffect(() => api.get<User>('users/me'));
+
 /**
  * Subscription.
  */
-$store.on(loginFx.doneData, (state, data) => ({
+$user.on(loginFx.doneData, (state, data) => ({
   ...state,
   ...data,
 }));
 
-$store.on(logoutFx.finally, () => initStore);
+$user.on(logoutFx.finally, () => initStore);
+
+$user.on(getProfileFx.doneData, (state, { data }) => ({
+  ...state,
+  ...data,
+}));
+
+$user.on([
+  loginFx.failData,
+  logoutFx.failData,
+  getProfileFx.failData,
+], (_, e) => console.error(e.message));

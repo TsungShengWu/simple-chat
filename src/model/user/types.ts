@@ -1,4 +1,10 @@
-export interface UserStore {
+export interface User {
+  id: number;
+  username: string;
+  nickname: string;
+}
+
+export interface UserStore extends Partial<User> {
   token?: string;
 }
 

@@ -1,7 +1,8 @@
 'use client';
 
-import { useStoreMap, useUnit } from 'effector-react';
-import { $store, logoutFx } from '@/model/user';
+import { useEffect } from 'react';
+import { useUnit } from 'effector-react';
+import { $user, getProfileFx, logoutFx } from '@/model/user';
 import Button from '@/components/Button';
 import LoginForm from '@/components/LoginForm';
 
@@ -10,8 +11,13 @@ export default function AuthLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const isLoggedIn = useStoreMap($store, (state) => !!state.token);
-  const logout = useUnit(logoutFx);
+  const [user, getProfile, logout] = useUnit([$user, getProfileFx, logoutFx]);
+  const isLoggedIn = !!user?.token;
+  const { nickname } = user;
+
+  useEffect(() => {
+    if (isLoggedIn) { getProfile(); }
+  }, [isLoggedIn]);
 
   return (
     <div className="flex flex-col h-screen text-gray-700 dark:text-gray-300">
@@ -20,7 +26,14 @@ export default function AuthLayout({
           <div className="text-xl font-bold pl-2 pr-2">
             Simple Chat
           </div>
-          {isLoggedIn && <Button onClick={logout}>Logout</Button>}
+          {
+            isLoggedIn && (
+              <div className="flex gap-4 items-center">
+                {nickname ? <span>Hi, {nickname}</span> : null}
+                <Button onClick={logout}>Logout</Button>
+              </div>
+            )
+          }
         </div>
       </div>
       <div className="flex-1">
