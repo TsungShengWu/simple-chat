@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useUnit } from 'effector-react';
-import { loginFx } from '@/model/user';
+import { loginFx } from '@/models/user';
 import Input from '@/components/Input';
 import Button from '@/components/Button';
 

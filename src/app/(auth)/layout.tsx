@@ -2,7 +2,7 @@
 
 import { useEffect } from 'react';
 import { useUnit } from 'effector-react';
-import { $user, getProfileFx, logoutFx } from '@/model/user';
+import { $user, getProfileFx, logoutFx } from '@/models/user';
 import Button from '@/components/Button';
 import LoginForm from '@/components/LoginForm';
 
@@ -22,8 +22,8 @@ export default function AuthLayout({
   return (
     <div className="flex flex-col h-screen text-gray-700 dark:text-gray-300">
       <div className="bg-gray-300 dark:bg-gray-800 pt-2 pb-2">
-        <div className="max-w-screen-xl mx-auto flex justify-between items-center">
-          <div className="text-xl font-bold pl-2 pr-2">
+        <div className="max-w-screen-xl mx-auto flex justify-between items-center pl-3 pr-3">
+          <div className="text-xl font-bold">
             Simple Chat
           </div>
           {
