@@ -13,7 +13,7 @@ export default function LoginForm() {
       username: form.get('username')?.toString() ?? '',
       password: form.get('password')?.toString() ?? '',
     }).catch((e) => setError(e.message));
-  }
+  };
 
   return (
     <form
@@ -23,7 +23,9 @@ export default function LoginForm() {
       <Input name="username" label="Username" />
       <Input name="password" label="Password" />
       <div className="text-sm text-red-500">{error}</div>
-      <Button buttonType="primary" type="submit">Submit</Button>
+      <Button buttonType="primary" type="submit">
+        Submit
+      </Button>
     </form>
-  )
+  );
 }

@@ -1,9 +1,4 @@
-import { User } from "../user/types";
-
-export interface ChatStore {
-  users: User[];
-  messages: Message[];
-}
+import { User } from '../user/types';
 
 export interface Message {
   id: number;
@@ -11,3 +6,10 @@ export interface Message {
   createdAt: string;
   user: User;
 }
+
+export interface ChatStore {
+  users: User[];
+  messages: Message[];
+}
+
+export interface SendMessagePayload extends Pick<Message, 'content'> {}

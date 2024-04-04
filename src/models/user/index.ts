@@ -6,21 +6,16 @@ const initStore: UserStore = {};
 
 export const $user = createStore<UserStore>(initStore);
 
-export const loginFx = createEffect(
-  (data: LoginPayload) => api.post<LoginResult>(
-    'auth/login',
-    data, 
-  ).then(({ data }) => {
+export const loginFx = createEffect((data: LoginPayload) =>
+  api.post<LoginResult>('auth/login', data).then(({ data }) => {
     // Append the token to every request.
     api.defaults.headers.common.Authorization = `Bearer ${data.token}`;
     return data;
   }),
 );
 
-export const logoutFx = createEffect(
-  () => api.get(
-    'auth/logout',
-  ).finally(() => {
+export const logoutFx = createEffect(() =>
+  api.get('auth/logout').finally(() => {
     api.defaults.headers.common.Authorization = undefined;
   }),
 );
@@ -42,8 +37,6 @@ $user.on(getProfileFx.doneData, (state, { data }) => ({
   ...data,
 }));
 
-$user.on([
-  loginFx.failData,
-  logoutFx.failData,
-  getProfileFx.failData,
-], (_, e) => console.error(e.message));
+$user.on([loginFx.failData, logoutFx.failData, getProfileFx.failData], (_, e) =>
+  console.error(e.message),
+);

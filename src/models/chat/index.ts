@@ -1,5 +1,6 @@
-import { createStore } from 'effector';
-import { ChatStore } from './types';
+import { createStore, createEffect } from 'effector';
+import { ChatStore, SendMessagePayload } from './types';
+import api from '../api';
 
 const initStore: ChatStore = {
   users: [],
@@ -28,3 +29,7 @@ const initStore: ChatStore = {
 };
 
 export const $chat = createStore<ChatStore>(initStore);
+
+export const sendMessageFx = createEffect((data: SendMessagePayload) =>
+  api.post<void>('chat', data),
+);
