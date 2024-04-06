@@ -1,6 +1,6 @@
 import { createStore, createEffect } from 'effector';
-import { UserStore, LoginPayload, LoginResult, User } from './types';
 import api from '../api';
+import { UserStore, LoginPayload, LoginResult, User } from './types';
 
 const initStore: UserStore = {};
 
@@ -38,5 +38,5 @@ $user.on(getProfileFx.doneData, (state, { data }) => ({
 }));
 
 $user.on([loginFx.failData, logoutFx.failData, getProfileFx.failData], (_, e) =>
-  console.error(e.message),
+  console.error(e?.message),
 );

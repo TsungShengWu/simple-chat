@@ -12,7 +12,7 @@ export default function LoginForm() {
     login({
       username: form.get('username')?.toString() ?? '',
       password: form.get('password')?.toString() ?? '',
-    }).catch((e) => setError(e.message));
+    }).catch((e) => setError(e?.message));
   };
 
   return (

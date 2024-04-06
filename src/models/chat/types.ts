@@ -8,8 +8,18 @@ export interface Message {
 }
 
 export interface ChatStore {
-  users: User[];
+  members: User[];
   messages: Message[];
 }
 
 export interface SendMessagePayload extends Pick<Message, 'content'> {}
+
+export interface AllMembersDto extends Pick<ChatStore, 'members'> {}
+
+export interface MemberJoinDto extends User {}
+
+export interface MemberLeaveDto extends Pick<User, 'id'> {}
+
+export interface NewMessageDto extends Pick<Message, 'content' | 'createdAt'> {
+  userId: Message['user']['id'];
+}
